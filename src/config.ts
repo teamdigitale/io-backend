@@ -300,18 +300,19 @@ const DEFAULT_REQUEST_TIMEOUT_MS = 10000 as Millisecond;
 // HTTP-only fetch with optional keepalive agent
 // @see https://github.com/pagopa/io-ts-commons/blob/master/src/agent.ts#L10
 const abortableFetch = AbortableFetch(agent.getHttpFetch(process.env));
-// HTTPS-only fetch with optional keepalive agent
-const securedAbortableFetch = AbortableFetch(agent.getHttpsFetch(process.env));
 const fetchWithTimeout = setFetchTimeout(
   DEFAULT_REQUEST_TIMEOUT_MS,
   abortableFetch
 );
-const securedFetchWithTimeout = setFetchTimeout(
-  DEFAULT_REQUEST_TIMEOUT_MS,
-  securedAbortableFetch
-);
 const httpApiFetch = toFetch(fetchWithTimeout);
-const httpsApiFetch = toFetch(securedFetchWithTimeout);
+
+// HTTPS-only fetch with optional keepalive agent
+const httpsAbortableFetch = AbortableFetch(agent.getHttpsFetch(process.env));
+const httpsFetchWithTimeout = setFetchTimeout(
+  DEFAULT_REQUEST_TIMEOUT_MS,
+  httpsAbortableFetch
+);
+const httpsApiFetch = toFetch(httpsFetchWithTimeout);
 
 export const API_KEY = getRequiredENVVar("API_KEY");
 export const API_URL = getRequiredENVVar("API_URL");
