@@ -300,16 +300,23 @@ const DEFAULT_REQUEST_TIMEOUT_MS = 10000 as Millisecond;
 // HTTP-only fetch with optional keepalive agent
 // @see https://github.com/pagopa/io-ts-commons/blob/master/src/agent.ts#L10
 const abortableFetch = AbortableFetch(agent.getHttpFetch(process.env));
+// HTTPS-only fetch with optional keepalive agent
+const securedAbortableFetch = AbortableFetch(agent.getHttpsFetch(process.env));
 const fetchWithTimeout = setFetchTimeout(
   DEFAULT_REQUEST_TIMEOUT_MS,
   abortableFetch
 );
+const securedFetchWithTimeout = setFetchTimeout(
+  DEFAULT_REQUEST_TIMEOUT_MS,
+  securedAbortableFetch
+);
 const httpApiFetch = toFetch(fetchWithTimeout);
+const httpsApiFetch = toFetch(securedFetchWithTimeout);
 
 export const API_KEY = getRequiredENVVar("API_KEY");
 export const API_URL = getRequiredENVVar("API_URL");
 export const API_BASE_PATH = getRequiredENVVar("API_BASE_PATH");
-export const API_CLIENT = new ApiClientFactory(API_KEY, API_URL, httpApiFetch);
+export const API_CLIENT = new ApiClientFactory(API_KEY, API_URL, API_URL.startsWith("https") ? httpsApiFetch : httpApiFetch);
 
 export const BONUS_API_KEY = getRequiredENVVar("BONUS_API_KEY");
 export const BONUS_API_URL = getRequiredENVVar("BONUS_API_URL");
@@ -317,7 +324,7 @@ export const BONUS_API_BASE_PATH = getRequiredENVVar("BONUS_API_BASE_PATH");
 export const BONUS_API_CLIENT = BonusAPIClient(
   BONUS_API_KEY,
   BONUS_API_URL,
-  httpApiFetch
+  BONUS_API_URL.startsWith("https") ? httpsApiFetch : httpApiFetch
 );
 
 export const CGN_API_KEY = getRequiredENVVar("CGN_API_KEY");
@@ -338,7 +345,7 @@ log.info("Session token duration set to %s seconds", tokenDurationSecs);
 
 // HTTPs-only fetch with optional keepalive agent
 // @see https://github.com/pagopa/io-ts-commons/blob/master/src/agent.ts#L10
-const httpsApiFetch = agent.getHttpsFetch(process.env);
+const simpleHttpsApiFetch = agent.getHttpsFetch(process.env);
 
 // Register a factory service to create PagoPA client.
 const pagoPAApiUrlProd = getRequiredENVVar("PAGOPA_API_URL_PROD");
@@ -346,7 +353,7 @@ const pagoPAApiUrlTest = getRequiredENVVar("PAGOPA_API_URL_TEST");
 export const PAGOPA_CLIENT = new PagoPAClientFactory(
   pagoPAApiUrlProd,
   pagoPAApiUrlTest,
-  httpsApiFetch
+  simpleHttpsApiFetch
 );
 
 // API endpoint mount.
