@@ -317,7 +317,11 @@ const httpsApiFetch = toFetch(httpsFetchWithTimeout);
 export const API_KEY = getRequiredENVVar("API_KEY");
 export const API_URL = getRequiredENVVar("API_URL");
 export const API_BASE_PATH = getRequiredENVVar("API_BASE_PATH");
-export const API_CLIENT = new ApiClientFactory(API_KEY, API_URL, API_URL.startsWith("https") ? httpsApiFetch : httpApiFetch);
+export const API_CLIENT = new ApiClientFactory(
+  API_KEY,
+  API_URL,
+  API_URL.startsWith("https") ? httpsApiFetch : httpApiFetch
+);
 
 export const BONUS_API_KEY = getRequiredENVVar("BONUS_API_KEY");
 export const BONUS_API_URL = getRequiredENVVar("BONUS_API_URL");
