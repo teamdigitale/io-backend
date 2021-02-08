@@ -2,8 +2,8 @@ import * as t from "io-ts";
 
 import { QueueClient, QueueSendMessageResponse } from "@azure/storage-queue";
 
-import { UTCISODateFromString } from "italia-ts-commons/lib/dates";
-import { FiscalCode } from "italia-ts-commons/lib/strings";
+import { UTCISODateFromString } from "@pagopa/ts-commons/lib/dates";
+import { FiscalCode } from "@pagopa/ts-commons/lib/strings";
 
 import { base64EncodeObject } from "../utils/messages";
 

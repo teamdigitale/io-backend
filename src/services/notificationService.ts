@@ -7,7 +7,7 @@ import {
   IResponseSuccessJson,
   ResponseErrorInternal,
   ResponseSuccessJson
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 
 import { QueueClient } from "@azure/storage-queue";
 import { fromNullable } from "fp-ts/lib/Option";

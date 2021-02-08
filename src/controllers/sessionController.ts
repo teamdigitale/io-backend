@@ -9,7 +9,7 @@ import {
   IResponseSuccessJson,
   ResponseErrorInternal,
   ResponseSuccessJson
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 
 import { isLeft } from "fp-ts/lib/Either";
 import TokenService from "src/services/tokenService";

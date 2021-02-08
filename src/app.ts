@@ -14,8 +14,8 @@ import expressEnforcesSsl = require("express-enforces-ssl");
 import {
   NodeEnvironment,
   NodeEnvironmentEnum
-} from "italia-ts-commons/lib/environment";
-import { CIDR } from "italia-ts-commons/lib/strings";
+} from "@pagopa/ts-commons/lib/environment";
+import { CIDR } from "@pagopa/ts-commons/lib/strings";
 import { QueueClient } from "@azure/storage-queue";
 import { withSpid } from "@pagopa/io-spid-commons";
 import { getSpidStrategyOption } from "@pagopa/io-spid-commons/dist/utils/middleware";

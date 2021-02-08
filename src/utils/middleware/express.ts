@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { ResponseErrorInternal } from "italia-ts-commons/lib/responses";
+import { ResponseErrorInternal } from "@pagopa/ts-commons/lib/responses";
 import { log } from "../logger";
 
 /**

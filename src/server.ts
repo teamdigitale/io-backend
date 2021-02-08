@@ -5,7 +5,7 @@ import * as http from "http";
 import * as https from "https";
 import * as appInsights from "applicationinsights";
 import { fromNullable } from "fp-ts/lib/Option";
-import { NodeEnvironmentEnum } from "italia-ts-commons/lib/environment";
+import { NodeEnvironmentEnum } from "@pagopa/ts-commons/lib/environment";
 import { newApp } from "./app";
 import {
   ALLOW_BPD_IP_SOURCE_RANGE,

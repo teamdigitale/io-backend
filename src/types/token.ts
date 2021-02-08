@@ -1,5 +1,5 @@
 import * as t from "io-ts";
-import { tag } from "italia-ts-commons/lib/types";
+import { tag } from "@pagopa/ts-commons/lib/types";
 
 interface ISessionTokenTag {
   readonly kind: "SessionToken";

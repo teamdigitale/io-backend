@@ -7,7 +7,7 @@ import {
   ResponseErrorNotFound,
   ResponseErrorValidation,
   ResponseSuccessJson
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 
 import { PaymentActivationsGetResponse } from "../../generated/backend/PaymentActivationsGetResponse";
 import { PaymentActivationsPostResponse } from "../../generated/backend/PaymentActivationsPostResponse";

@@ -2,7 +2,7 @@ import * as express from "express";
 import {
   IResponse,
   ResponseErrorInternal
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 
 /**
  * Convenience method that transforms a function (handler),

@@ -10,14 +10,14 @@ import {
   ResponseErrorInternal,
   ResponseErrorValidation,
   ResponseSuccessJson
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 
 import { sequenceT } from "fp-ts/lib/Apply";
 import { toError } from "fp-ts/lib/Either";
 import { identity } from "fp-ts/lib/function";
 import { fromEither, taskEither, tryCatch } from "fp-ts/lib/TaskEither";
-import { readableReport } from "italia-ts-commons/lib/reporters";
-import { FiscalCode } from "italia-ts-commons/lib/strings";
+import { readableReport } from "@pagopa/ts-commons/lib/reporters";
+import { FiscalCode } from "@pagopa/ts-commons/lib/strings";
 import { SuccessResponse } from "src/types/commons";
 import RedisSessionStorage from "../services/redisSessionStorage";
 import RedisUserMetadataStorage from "../services/redisUserMetadataStorage";

@@ -10,9 +10,9 @@ import * as t from "io-ts";
 import {
   errorsToReadableMessages,
   readableReport
-} from "italia-ts-commons/lib/reporters";
-import { IResponseErrorValidation } from "italia-ts-commons/lib/responses";
-import { NonEmptyString } from "italia-ts-commons/lib/strings";
+} from "@pagopa/ts-commons/lib/reporters";
+import { IResponseErrorValidation } from "@pagopa/ts-commons/lib/responses";
+import { NonEmptyString } from "@pagopa/ts-commons/lib/strings";
 import { DOMParser } from "xmldom";
 
 import { EmailAddress } from "../../generated/backend/EmailAddress";

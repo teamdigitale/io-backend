@@ -1,4 +1,4 @@
-import { FiscalCode } from "italia-ts-commons/lib/strings";
+import { FiscalCode } from "@pagopa/ts-commons/lib/strings";
 import * as passport from "passport";
 import { Strategy } from "passport-local";
 import { SpidUser } from "src/types/user";

@@ -4,8 +4,8 @@
 
 import * as express from "express";
 import { isLeft } from "fp-ts/lib/Either";
-import { readableReport } from "italia-ts-commons/lib/reporters";
-import { CIDR, IPString } from "italia-ts-commons/lib/strings";
+import { readableReport } from "@pagopa/ts-commons/lib/reporters";
+import { CIDR, IPString } from "@pagopa/ts-commons/lib/strings";
 import * as rangeCheck from "range_check";
 import { log } from "../logger";
 

@@ -9,7 +9,7 @@ import {
   IResponseErrorTooManyRequests,
   IResponseSuccessJson,
   ResponseErrorInternal
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 import { InitializedProfile } from "../../generated/backend/InitializedProfile";
 
 import { ExtendedProfile } from "../../generated/io-api/ExtendedProfile";

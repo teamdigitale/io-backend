@@ -24,13 +24,13 @@ import {
   ResponseErrorValidation,
   ResponsePermanentRedirect,
   ResponseSuccessJson
-} from "italia-ts-commons/lib/responses";
-import { UrlFromString } from "italia-ts-commons/lib/url";
+} from "@pagopa/ts-commons/lib/responses";
+import { UrlFromString } from "@pagopa/ts-commons/lib/url";
 
 import { NewProfile } from "generated/io-api/NewProfile";
 
-import { errorsToReadableMessages } from "italia-ts-commons/lib/reporters";
-import { FiscalCode, NonEmptyString } from "italia-ts-commons/lib/strings";
+import { errorsToReadableMessages } from "@pagopa/ts-commons/lib/reporters";
+import { FiscalCode, NonEmptyString } from "@pagopa/ts-commons/lib/strings";
 import UsersLoginLogService from "src/services/usersLoginLogService";
 import { SuccessResponse } from "../../generated/auth/SuccessResponse";
 import { UserIdentity } from "../../generated/auth/UserIdentity";

@@ -1,6 +1,6 @@
 import { Either } from "fp-ts/lib/Either";
 import { array, Errors } from "io-ts";
-import { CIDR } from "italia-ts-commons/lib/strings";
+import { CIDR } from "@pagopa/ts-commons/lib/strings";
 
 /**
  * Parse a comma separated string of CIDR(s) or IP(s) into an array

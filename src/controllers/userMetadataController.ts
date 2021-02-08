@@ -12,7 +12,7 @@ import {
   ResponseErrorConflict,
   ResponseErrorInternal,
   ResponseSuccessJson
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 
 import { isLeft } from "fp-ts/lib/Either";
 import { IResponseNoContent, ResponseNoContent } from "../utils/responses";

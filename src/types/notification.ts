@@ -4,8 +4,8 @@
 
 import * as crypto from "crypto";
 import * as t from "io-ts";
-import { NonEmptyString } from "italia-ts-commons/lib/strings";
-import { tag } from "italia-ts-commons/lib/types";
+import { NonEmptyString } from "@pagopa/ts-commons/lib/strings";
+import { tag } from "@pagopa/ts-commons/lib/types";
 
 import { FiscalCode } from "../../generated/backend/FiscalCode";
 

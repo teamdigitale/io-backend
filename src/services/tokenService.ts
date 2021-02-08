@@ -6,8 +6,8 @@ import * as crypto from "crypto";
 import { promisify } from "util";
 import { toError } from "fp-ts/lib/Either";
 import { TaskEither, taskify } from "fp-ts/lib/TaskEither";
-import { FiscalCode, NonEmptyString } from "italia-ts-commons/lib/strings";
-import { Second } from "italia-ts-commons/lib/units";
+import { FiscalCode, NonEmptyString } from "@pagopa/ts-commons/lib/strings";
+import { Second } from "@pagopa/ts-commons/lib/units";
 import * as jwt from "jsonwebtoken";
 import { ulid } from "ulid";
 

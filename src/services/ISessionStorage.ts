@@ -4,7 +4,7 @@
 
 import { Either } from "fp-ts/lib/Either";
 import { Option } from "fp-ts/lib/Option";
-import { EmailString, FiscalCode } from "italia-ts-commons/lib/strings";
+import { EmailString, FiscalCode } from "@pagopa/ts-commons/lib/strings";
 import {
   BPDToken,
   MyPortalToken,

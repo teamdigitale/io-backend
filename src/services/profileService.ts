@@ -16,9 +16,9 @@ import {
   ResponseErrorTooManyRequests,
   ResponseSuccessAccepted,
   ResponseSuccessJson
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 
-import { errorsToReadableMessages } from "italia-ts-commons/lib/reporters";
+import { errorsToReadableMessages } from "@pagopa/ts-commons/lib/reporters";
 import { ExtendedProfile as ExtendedProfileApi } from "../../generated/io-api/ExtendedProfile";
 import { NewProfile } from "../../generated/io-api/NewProfile";
 import { Profile as ProfileApi } from "../../generated/io-api/Profile";

@@ -8,7 +8,7 @@ import {
   IResponseErrorValidation,
   IResponseSuccessJson,
   ResponseSuccessJson
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 
 import { BPDUser } from "../../generated/bpd/BPDUser";
 import { MyPortalUser } from "../../generated/myportal/MyPortalUser";

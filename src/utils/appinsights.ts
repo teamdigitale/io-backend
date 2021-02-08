@@ -2,7 +2,7 @@ import * as appInsights from "applicationinsights";
 import {
   ApplicationInsightsConfig,
   initAppInsights as startAppInsights
-} from "italia-ts-commons/lib/appinsights";
+} from "@pagopa/ts-commons/lib/appinsights";
 import { toFiscalCodeHash } from "../types/notification";
 import { User } from "../types/user";
 

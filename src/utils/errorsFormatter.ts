@@ -1,6 +1,6 @@
 import { Errors } from "io-ts";
-import { errorsToReadableMessages } from "italia-ts-commons/lib/reporters";
-import { ProblemJson } from "italia-ts-commons/lib/responses";
+import { errorsToReadableMessages } from "@pagopa/ts-commons/lib/reporters";
+import { ProblemJson } from "@pagopa/ts-commons/lib/responses";
 
 /**
  * Merge into one single Error several errors provided in input and add a context description

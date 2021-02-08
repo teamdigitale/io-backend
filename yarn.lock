@@ -323,6 +323,20 @@
     xmldom "^0.1.27"
     yargs "^15.3.0"
 
+"@pagopa/ts-commons@^9.1.0":
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/@pagopa/ts-commons/-/ts-commons-9.1.0.tgz#bbb5f41ffa7039e355123cc40411529b55cc1e34"
+  integrity sha512-wRXk/qm1ReYsg9QHC0cYZraZpJw6AB2RYlU1WrcDFXUnbxEqQ2immP1knyaMkbqhm/uD4EXzX6/vKNztUHN+lg==
+  dependencies:
+    abort-controller "^3.0.0"
+    agentkeepalive "^4.1.2"
+    applicationinsights "^1.7.4"
+    fp-ts "1.17.4"
+    io-ts "1.8.5"
+    json-set-map "^1.0.2"
+    node-fetch "^2.6.0"
+    validator "^10.1.0"
+
 "@types/apicache@^1.2.0":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@types/apicache/-/apicache-1.2.2.tgz#b820659b1d95e66ec0e71dcd0317e9d30f0c154b"
@@ -4165,20 +4179,6 @@ italia-ts-commons@^5.1.4:
     fp-ts "1.12.0"
     io-ts "1.8.5"
     json-set-map "^1.0.2"
-    validator "^10.1.0"
-
-italia-ts-commons@^8.3.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/italia-ts-commons/-/italia-ts-commons-8.3.0.tgz#4b84b69ff69810f19d45c96dfed350ce812f13ca"
-  integrity sha512-iBVTvhBrRNjSWb1irk/BzPZZodSsZJpTOl7Sl9eUJNOFFjhObOki2mRIy+MgawKc5HR03Ec15vBHPHtEayswpg==
-  dependencies:
-    abort-controller "^3.0.0"
-    agentkeepalive "^4.1.2"
-    applicationinsights "^1.7.4"
-    fp-ts "1.17.4"
-    io-ts "1.8.5"
-    json-set-map "^1.0.2"
-    node-fetch "^2.6.0"
     validator "^10.1.0"
 
 italia-ts-commons@^8.6.0:

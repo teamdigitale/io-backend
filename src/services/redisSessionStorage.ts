@@ -23,8 +23,8 @@ import {
   taskify,
   tryCatch
 } from "fp-ts/lib/TaskEither";
-import { errorsToReadableMessages } from "italia-ts-commons/lib/reporters";
-import { EmailString, FiscalCode } from "italia-ts-commons/lib/strings";
+import { errorsToReadableMessages } from "@pagopa/ts-commons/lib/reporters";
+import { EmailString, FiscalCode } from "@pagopa/ts-commons/lib/strings";
 import * as redis from "redis";
 import { SessionInfo } from "../../generated/backend/SessionInfo";
 import { SessionsList } from "../../generated/backend/SessionsList";

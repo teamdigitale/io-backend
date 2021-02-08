@@ -3,14 +3,14 @@ import { format as dateFnsFormat } from "date-fns";
 import { isLeft, tryCatch2v } from "fp-ts/lib/Either";
 import { fromEither, fromNullable, isNone, Option } from "fp-ts/lib/Option";
 import * as t from "io-ts";
-import { UTCISODateFromString } from "italia-ts-commons/lib/dates";
-import { readableReport } from "italia-ts-commons/lib/reporters";
+import { UTCISODateFromString } from "@pagopa/ts-commons/lib/dates";
+import { readableReport } from "@pagopa/ts-commons/lib/reporters";
 import {
   FiscalCode,
   IPString,
   NonEmptyString,
   PatternString
-} from "italia-ts-commons/lib/strings";
+} from "@pagopa/ts-commons/lib/strings";
 import { DOMParser } from "xmldom";
 import { log } from "./logger";
 import { base64EncodeObject } from "./messages";

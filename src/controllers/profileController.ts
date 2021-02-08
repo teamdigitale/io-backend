@@ -12,7 +12,7 @@ import {
   IResponseErrorValidation,
   IResponseSuccessAccepted,
   IResponseSuccessJson
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 import { ISessionStorage } from "src/services/ISessionStorage";
 
 import { InitializedProfile } from "../../generated/backend/InitializedProfile";

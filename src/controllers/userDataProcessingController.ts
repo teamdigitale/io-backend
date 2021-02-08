@@ -12,7 +12,7 @@ import {
   IResponseErrorValidation,
   IResponseSuccessAccepted,
   IResponseSuccessJson
-} from "italia-ts-commons/lib/responses";
+} from "@pagopa/ts-commons/lib/responses";
 
 import { UserDataProcessing } from "../../generated/backend/UserDataProcessing";
 import { UserDataProcessingChoice } from "../../generated/backend/UserDataProcessingChoice";
